@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<amount &le; 22100.0<br/>gini = 0.499<br/>samples = 7727<br/>value = [4030, 3697]<br/>class = no>, fillcolor="#e5813915"] ;
+1 [label=<amount &le; 5362.5<br/>gini = 0.498<br/>samples = 7316<br/>value = [3860, 3456]<br/>class = no>, fillcolor="#e581391b"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<age &le; 24.5<br/>gini = 0.5<br/>samples = 2411<br/>value = [1186, 1225]<br/>class = yes>, fillcolor="#399de508"] ;
+1 -> 2 ;
+3 [label=<gini = 0.495<br/>samples = 975<br/>value = [437, 538]<br/>class = yes>, fillcolor="#399de530"] ;
+2 -> 3 ;
+4 [label=<gini = 0.499<br/>samples = 1436<br/>value = [749, 687]<br/>class = no>, fillcolor="#e5813915"] ;
+2 -> 4 ;
+5 [label=<age &le; 22.5<br/>gini = 0.496<br/>samples = 4905<br/>value = [2674, 2231]<br/>class = no>, fillcolor="#e581392a"] ;
+1 -> 5 ;
+6 [label=<gini = 0.5<br/>samples = 772<br/>value = [386, 386]<br/>class = no>, fillcolor="#e5813900"] ;
+5 -> 6 ;
+7 [label=<gini = 0.494<br/>samples = 4133<br/>value = [2288, 1845]<br/>class = no>, fillcolor="#e5813931"] ;
+5 -> 7 ;
+8 [label=<amount &le; 29475.0<br/>gini = 0.485<br/>samples = 411<br/>value = [170, 241]<br/>class = yes>, fillcolor="#399de54b"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<years &le; 0.5<br/>gini = 0.471<br/>samples = 340<br/>value = [129, 211]<br/>class = yes>, fillcolor="#399de563"] ;
+8 -> 9 ;
+10 [label=<gini = 0.496<br/>samples = 35<br/>value = [19, 16]<br/>class = no>, fillcolor="#e5813928"] ;
+9 -> 10 ;
+11 [label=<gini = 0.461<br/>samples = 305<br/>value = [110, 195]<br/>class = yes>, fillcolor="#399de56f"] ;
+9 -> 11 ;
+12 [label=<years &le; 26.5<br/>gini = 0.488<br/>samples = 71<br/>value = [41, 30]<br/>class = no>, fillcolor="#e5813944"] ;
+8 -> 12 ;
+13 [label=<gini = 0.479<br/>samples = 68<br/>value = [41, 27]<br/>class = no>, fillcolor="#e5813957"] ;
+12 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 3<br/>value = [0, 3]<br/>class = yes>, fillcolor="#399de5ff"] ;
+12 -> 14 ;
+}
